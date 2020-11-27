@@ -150,4 +150,3 @@ class QuestionResultsViewTests(TestCase):
         url = reverse('polls:results', args=(past_question.id,))
         response = self.client.get(url)
         self.assertContains(response, past_question.question_text)
-
